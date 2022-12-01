@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triplus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/trip.css">
+
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/script.js" defer type="text/javascript"></script>
+    <script src="javascript/jquery.cookie.js"></script>
+</head>
+<body>
+    <div id="notice_wrap">
+        
+        <img
+          src="resources/cookie.jpg"
+          alt="이달의 사진"
+          width="300px"
+          height="300px"
+         />
+        <p class="closewrap">
+          <input type="checkbox" name="expiresChk" id="expiresChk" />
+          <label for="expiresChk">3일 동안 이 창 열지 않기</label>
+          <button class="closeBtn">닫기</button>
+        </p>
+      </div>
+    <header>
+        <div class="top">
+            <div class="logo">
+                Triplus
+            </div>
+            <nav class="menu">
+                <ul class="navi">  
+                    <li><a href="#">해외여행</a>
+                        <ul class="submenu">
+                            <li><a href="#">아시아</a></li>
+                            <li><a href="#">유럽</a></li>
+                            <li><a href="#">미주</a></li>
+                            <li><a href="#">동남아/대만</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">국내여행</a>
+                        <ul class="submenu">
+                            <li><a href="#">제주도</a></li>
+                            <li><a href="#">부산</a></li>
+                            <li><a href="#">강원도</a></li>
+                            <li><a href="#">서울</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">갤러리</a></li>
+                            <li><a href="#">여행후기</a></li>
+                            <li><a href="#">추천 여행지</a></li>
+                            <li><a href="#">이달의 여행지</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">마이메뉴</a>
+                        <ul class="submenu">
+                            <li><a href="#">나의예약</a></li>
+                            <li><a href="#">찜</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="body1">
+        크리스마스 추천 여행지
+    </div>
+    <div class="wrap">
+        <div class="imgslide">
+            <a href="#">
+                <img src="resources/London.jpg" alt="런던" >
+                <span class="imgtext">런던 예약가능일정 보기</span>
+            </a>
+            <a href="#">
+                <img src="resources/uk.jpg" alt="영국" >
+                <span class="imgtext">영국 예약가능일정 보기</span>
+            </a>
+            <a href="#">
+                <img src="resources/Vienna.jpg" alt="비엔나" >
+                <span class="imgtext">비엔나 예약가능일정 보기</span>
+            </a>
+            <a href="#">
+                <img src="resources/losangleles.jpg" alt="로스엔젤레스" >
+                <span class="imgtext">로스엔젤레스 예약가능일정 보기</span>
+            </a>
+        </div>
+        <div class="contents">
+            <ul class="tabmenu">
+                <li class="active"><a href="#">공지사항</a>
+                    <div class="notice">
+                        <ul>
+                            <li><a href="#"> 코로나 관련 예약 공지사항 안내<span>open</span></a>
+                            </li>
+                            <li><a href="#">예약 변경 수수료 관련 안내<span>open</span></a>
+                            </li>
+                            <li><a href="#">여행 이미지 엽서 만들기 체험<span>open</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li > <a href="#">인기 여행지</a>
+                    <div class="gallery">
+                        <ul>
+                            <li><a href="#"><img src="resources/lyaly-fam.jpg" alt="이탈리아"></a></li>
+                            <li><a href="#"><img src="resources/london-fam.jpg" alt="런던"></a></li>
+                            <li><a href="#"><img src="resources/paris-fam.jpg" alt="파리"></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="otherwrap">
+                <div class="banner">
+                    <a href="#">
+                        <img src="resources/airplane.jpg" alt="배너 이미지">
+                        <h4 class="bntext">항공권 예약 안내</h4>
+                    </a>
+                </div>                
+                <div class="shortcut">
+                    <a href="#">
+                        <img src="resources/canada.jpg" alt="캐나다"><h4 class="sctext"> 현재 인기 <br> 캐나다 예약 바로가기</h4>
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- 레이어 팝업창 영역 -->
+    <div id="layer">
+        <div class="layer_up">
+            <div class="uptitle">코로나 관련 예약 공지사항</div>
+            <div class="upbody">
+            거리두기 기준 완화에 따른 여행제한구역 여행지들의 여행이 가능합니다. 경우에 따라 백신 접종 확인증 등 코로나 관련 서류가 필요한 지역을 방문할 때에는 예약하실때 참고하시어 예약을 진행해주세요.
+            </div>
+            <div class="btn">닫기</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo"> 
+            TriPlus </div>
+        <div class="site">
+            <div class="btmenu">
+                <ul>
+                    <li><a href="#">유튜브</a></li>
+                    <li><a href="#">블로그</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                </ul>
+            </div>
+            <div class="copy">COPYRIGHT &#169; by WEBDESIGN. ALL RIGHTS RESERVED</div>
+        </div>
+    </footer>
+</body>
+</html>
